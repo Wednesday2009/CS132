@@ -6,7 +6,7 @@ char c;                                                                         
                                                                                            
 void setup() {
  pinMode (LED, OUTPUT);                                                                     // Define the LED pin as 
- Serial.begin(9600);                                                                        // begin serial comm.                                    
+ Serial.begin(9600);                                                                        // begin serial monitor                                  
  Wire.begin();                                                                              // join i2c bus as master
  Serial.println("I am Master");                                                             // prints "I am Master" in Serial Monitor
  
