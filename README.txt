@@ -1,6 +1,6 @@
 Hello Sir!
 
-These are the files that for our Final Project. In this Repository we have:
+These are the files for our Final Project. In this Repository we have:
 
 
 ArduinoSlaving.pptx - this includes screenshots and results of our code ran on Arduino IDE.
