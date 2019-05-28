@@ -37,9 +37,6 @@ char requestEvent() {                                                           
   else if(a == 7){
     Wire.write(" PRIME     ");                                                                                 // condition that writes "PRIME" if a == 7
   }
-  else if(a == 9){
-    Wire.write(" SEMIPRIME     ");                                                                             // condition that writes "SEMIPRIME" if a == 9
-  }
   else if(a % 2 == 0){
     Wire.write(" not prime ");                                                                                 // condition that checks if a is divisible by 2
   }
@@ -56,12 +53,17 @@ char requestEvent() {                                                           
     Wire.write(" not prime ");                                                                                // condition that checks if a is divisible by 2
   }
   else{
-    for(int i = 2; i <= (a / 2); ++i){                                                                        // condition that checks if a is divisible by other numbers other than the checkers above
-      if((a % i) == 0){
-        Wire.write(" not prime ");
+    int b = 0;
+    for(int i = 2; i <= (a / 2); ++i){                                                                          // condition that checks if a is divisible by other numbers other than the checkers above
+      if(a % i == 0){
+        b  = 1;
         break;
       }
-      else  Wire.write(" PRIME     ");
     }
+   if(b == 0){
+    Wire.write(" PRIME     "); 
+   }
+   else Wire.write(" not prime ");
+   
   }
 }
