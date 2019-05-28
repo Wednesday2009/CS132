@@ -16,6 +16,7 @@ void setup() {
 }
 
 void loop() {
+
   
     // receive from slave
     Serial.print("Slave Uno-chan: ");                                                       // prints "Slave Uno-chan: " in the Serial Monitor
